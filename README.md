@@ -8,7 +8,7 @@
 
 ---
 
-- [ ] Home
+- [x] Home
 - [ ] TV Shows
 - [ ] Search
 - [ ] Detail
