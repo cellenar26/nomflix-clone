@@ -8,20 +8,20 @@
 
 ---
 
-[ ] Home
-[ ] TV Shows
-[ ] Search
-[ ] Detail
+- [ ] Home
+- [ ] TV Shows
+- [ ] Search
+- [ ] Detail
 
 ### 기능적 요구사항
 
 ---
 
-[ ] Now playing (Movie)
-[ ] Upcoming (Movie)
-[ ] Top Rated (TV)
-[ ] Popular (TV, Movie)
-[ ] Airing Today (TV)
-[ ] TV Show Detail
-[ ] Movie Detail
-[ ] Search (TV, Movie)
+- [ ] Now playing (Movie)
+- [ ] Upcoming (Movie)
+- [ ] Top Rated (TV)
+- [ ] Popular (TV, Movie)
+- [ ] Airing Today (TV)
+- [ ] TV Show Detail
+- [ ] Movie Detail
+- [ ] Search (TV, Movie)
