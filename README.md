@@ -9,9 +9,9 @@
 ---
 
 - [x] Home
-- [ ] TV Shows
-- [ ] Search
-- [ ] Detail
+- [x] TV Shows
+- [x] Search
+- [x] Detail
 
 ### 기능적 요구사항
 
