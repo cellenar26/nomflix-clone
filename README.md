@@ -17,11 +17,13 @@
 
 ---
 
-- [ ] Now playing (Movie)
-- [ ] Upcoming (Movie)
-- [ ] Top Rated (TV)
-- [ ] Popular (TV, Movie)
-- [ ] Airing Today (TV)
-- [ ] TV Show Detail
-- [ ] Movie Detail
-- [ ] Search (TV, Movie)
+- [ ] [Now playing](https://developers.themoviedb.org/3/movies/get-now-playing) (Movie)
+- [ ] [Upcoming](https://developers.themoviedb.org/3/movies/get-upcoming) (Movie)
+- [ ] [Top Rated](https://developers.themoviedb.org/3/tv/get-top-rated-tv) (TV)
+- [ ] [Popular](https://developers.themoviedb.org/3/tv/get-popular-tv-shows) (TV)
+- [ ] [Popular](https://developers.themoviedb.org/3/movies/get-popular-movies) (Movie)
+- [ ] [Airing Today](https://developers.themoviedb.org/3/tv/get-tv-airing-today) (TV)
+- [ ] [TV Show Detail](https://developers.themoviedb.org/3/tv/get-tv-details)
+- [ ] [Movie Detail](https://developers.themoviedb.org/3/movies/get-movie-details)
+- [ ] [Search](https://developers.themoviedb.org/3/search/search-tv-shows) (TV)
+- [ ] [Search](https://developers.themoviedb.org/3/search/search-movies) (Movie)
