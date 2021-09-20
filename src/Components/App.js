@@ -1,16 +1,14 @@
-import React, {Component} from 'react';
-import Router from "./Router";
-import GlobalStyles from "./GlobalStyles";
+import React from "react";
+import Header from './Header';
+import AppRouter from "./Router";
 
-class App extends Component {
-  render() {
-    return  (
-      <>
-      <Router />
-      <GlobalStyles />
-      </>
-    );
-  }
-}
+const App = () => {
+  return (
+    <>
+      <Header />
+      <AppRouter />
+    </>
+  );
+};
 
 export default App;

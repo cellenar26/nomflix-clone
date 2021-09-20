@@ -1,1 +1,9 @@
-export default () => "Search";
+const Search = () => {
+    return (
+        <>
+        Search
+        </>
+    )
+}
+
+export default Search
