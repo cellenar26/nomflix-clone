@@ -8,9 +8,9 @@ const TVContainer = () => {
   const [airingToday, setAiringToday] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  console.log("tv con");
+  
   useEffect(() => {
-    console.log("hi");
+ 
     const getDatas = async () => {
       try {
         const {
