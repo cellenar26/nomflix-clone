@@ -2,7 +2,7 @@ import { moviesApi } from "api";
 import { useEffect, useState } from "react";
 import HomePresenter from "./HomePresenter";
 
-const HomeContainer = () => {
+const HomeContainer = ({props}) => {
   const [nowPlaying, setNowPlaying] = useState(null);
   const [upcoming, setUpcoming] = useState(null);
   const [popular, setPopular] = useState(null);
@@ -21,7 +21,7 @@ const HomeContainer = () => {
         const {
           data: { results: getPopular },
         } = await moviesApi.popular();
-        console.log(getNowPlaying);
+        
         setNowPlaying(getNowPlaying);
         setUpcoming(getUpcoming);
         setPopular(getPopular);

@@ -1,6 +1,7 @@
 const DetailPresenter = () => {
     return (
         <>
+        detail
         </>
     )
 }
