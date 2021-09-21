@@ -10,12 +10,14 @@ const AppRouter = () => {
     <Router>
       <Header />
       <Switch>
-        {/* <Route path="https://cellenar26.github.io/popcorn-clone/" exact component={Home}></Route>
+        <Route path="https://cellenar26.github.io/popcorn-clone/" exact component={Home}></Route>
         <Route path="https://cellenar26.github.io/popcorn-clone/tv" component={TV}></Route>
-        <Route path="https://cellenar26.github.io/popcorn-clone/search" component={Search}></Route> */}
-        <Route path="/" exact component={Home}></Route>
+        <Route path="https://cellenar26.github.io/popcorn-clone/search" component={Search}></Route>
+        {/* **This for local** */}
+        {/* <Route path="/" exact component={Home}></Route>
         <Route path="/tv" component={TV}></Route>
-        <Route path="/search" component={Search}></Route>
+        <Route path="/search" component={Search}></Route> */}
+        {/* **This for local** */}
         <Route path="/movie/:id" component={Detail}></Route>
         <Route path="/show/:id" component={Detail}></Route>
         <Redirect from="*" to="/" />
