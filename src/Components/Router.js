@@ -15,8 +15,6 @@ const AppRouter = () => {
         <Route path="/search" component={Search}></Route>
         <Route path="/movie/:id" component={Detail}></Route>
         <Route path="/show/:id" component={Detail}></Route>
-        {/* <Route path="/movie/:id" render={() => <Detail data={data}/>}></Route> */}
-        {/* <Route path="/show/:id" component={Detail}></Route> */}
         <Redirect from="*" to="/" />
       </Switch>
     </Router>
