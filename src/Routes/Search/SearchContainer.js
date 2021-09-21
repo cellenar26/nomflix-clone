@@ -4,19 +4,20 @@ import SearchPresenter from "./SearchPresenter";
 
 const SearchContainer = () => {
   const [movieResults, setMovieResults] = useState(null);
-  const [tvResults, setResults] = useState(null);
+  const [tvResults, setTvResults] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+      event.preventDefault();
       if (searchTerm !== "") {
         searchByTerm();
       }
     };
 
   const searchByTerm = async () => {
-    setSearchTerm(true);
+    setLoading(true);
     try {
       const {
         data: { results: getMovieResults },
@@ -24,6 +25,10 @@ const SearchContainer = () => {
       const {
         data: { results: getTvResults },
       } = await tvApi.search(searchTerm);
+      setMovieResults(getMovieResults)
+      setTvResults(getTvResults)
+
+
     } catch {
         setError("Can't find results")
     } finally {
@@ -33,6 +38,11 @@ const SearchContainer = () => {
 //   useEffect(() => {
 //     searchByTerm();
 //   }, []);
+  const updateTerm = (event) => {
+    const {target : {value}} = event
+    setSearchTerm(value)
+    
+  }
 
   return (
     <SearchPresenter
@@ -42,6 +52,7 @@ const SearchContainer = () => {
       loading={loading}
       error={error}
       handleSubmit={handleSubmit}
+      updateTerm={updateTerm}
     />
   );
 };
