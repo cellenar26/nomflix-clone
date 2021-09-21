@@ -9,7 +9,7 @@ const DetailContainer = () => {
   const params = useParams(); // {id: '848278'}
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [isMovie, setIsMovie] = useState(location.pathname.includes("/movie/"));
 
   // console.log(history, location, params);
@@ -21,19 +21,23 @@ const DetailContainer = () => {
         const request = await moviesApi.movieDetail(id);
         result = request.data
         console.log(result);
+        setResult(result)
       }
       else {
         const request = await tvApi.showDetail(id)
         result = request.data
         console.log(result);
+        setResult(result)
       }
     } catch {
+      console.log('error occur!');
       setError("Can't find anything.")
     } finally {
       setLoading(false)
-      setResult(result)
+      // setResult(result)
     }
   };
+  
 
   useEffect(() => {
     if (isNaN(Number(params.id)) === false) {
