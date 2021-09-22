@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Loader from "Components/Loader";
+import NotFoundError from "Components/NotFoundError";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -69,11 +70,12 @@ const Overview = styled.p`
 
 const DetailPresenter = ({ result, loading, error }) => {
   if (result === null || result === undefined) {
-    console.log("result가 비었어요!");
-    return "";
+    if (error === "Can't find anything.") {
+      return <NotFoundError />;
+    }
+    return <Loader />;
   }
 
-  console.log(error);
   return loading ? (
     <Loader />
   ) : (

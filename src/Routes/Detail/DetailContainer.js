@@ -19,25 +19,23 @@ const DetailContainer = () => {
     try {
       if (isMovie) {
         const request = await moviesApi.movieDetail(id);
-        result = request.data
-        console.log(result);
-        setResult(result)
-      }
-      else {
-        const request = await tvApi.showDetail(id)
-        result = request.data
-        console.log(result);
-        setResult(result)
+        result = request.data;
+        // console.log(result);
+        setResult(result);
+      } else {
+        const request = await tvApi.showDetail(id);
+        result = request.data;
+        // console.log(result);
+        setResult(result);
       }
     } catch {
-      console.log('error occur!');
-      setError("Can't find anything.")
+      // console.log("error occur!");
+      setError("Can't find anything.");
     } finally {
-      setLoading(false)
+      setLoading(false);
       // setResult(result)
     }
   };
-  
 
   useEffect(() => {
     if (isNaN(Number(params.id)) === false) {
@@ -49,7 +47,7 @@ const DetailContainer = () => {
       // alert('올바르지 않은 요청')
       // 리다이렉트, 어디로?
       history.push("/");
-      console.log("now steal alive"); // history.push("/") 로 인해 실행되지 않음
+      // console.log("now steal alive"); // history.push("/") 로 인해 실행되지 않음
     }
   }, []);
 

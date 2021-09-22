@@ -27,7 +27,7 @@ const SearchContainer = () => {
       } = await tvApi.search(searchTerm);
       setMovieResults(getMovieResults)
       setTvResults(getTvResults)
-      console.log(getTvResults);
+      // console.log(getTvResults);
 
     } catch {
         setError("Can't find results")
